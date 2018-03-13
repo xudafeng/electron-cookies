@@ -20,7 +20,7 @@ const FAKE_APP_URI = 'https://yourdomain.heap/';
     set(cookie) {
     // loose: true lets us accept cookies with key and no value, which the
     // original tests for this library included.
-      cookiejar.setCookieSync(Cookie.parse(cookie, {loose: true}), FAKE_APP_URI)
+      cookiejar.setCookieSync(Cookie.parse(cookie, {loose: true}), FAKE_APP_URI);
     }
   });
 })(document);
