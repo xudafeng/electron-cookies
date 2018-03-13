@@ -17,7 +17,7 @@
     "John Clover (https://github.com/radiofreejohn)"
   ],
   "license": "MIT",
-  "repository": "heap/electron-cookies",
+  "repository": "https://github.com/heap/electron-cookies",
   "devDependencies": {
     "chai": "^2.3.0",
     "grunt": "^0.4.5",
