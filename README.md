@@ -22,6 +22,12 @@ Then in your app's renderer code, require the package:
 require('electron-cookies');
 ```
 
+If your Electron app has the `nodeIntegration` preference set to `false`, you can include the browserified `dist/electron-cookies.js` via a `<script>` tag:
+
+```js
+<script src='./node_modules/electron-cookies/dist/electron-cookies.js'></script>
+```
+
 <details>
   <summary>Original README</summary>
 (Formerly called `atom-shell-cookies`)

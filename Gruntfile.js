@@ -2,6 +2,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-simple-mocha');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browserify');
   grunt.initConfig({
     simplemocha: { dev: {
       src: 'spec/electron_cookies_spec.js',
@@ -21,10 +22,17 @@ module.exports = function(grunt) {
         'test'
       ]
     }
-  }});
+  },
+    browserify: {
+      client: {
+        src: ['src/index.js'],
+        dest: 'dist/electron-cookies.js',
+      }
+    }
+  });
   grunt.registerTask('test', 'simplemocha:dev');
   grunt.registerTask('default', [
     'test',
-    'watch:all'
+    'browserify'
   ]);
 };
