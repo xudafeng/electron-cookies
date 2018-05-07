@@ -27,6 +27,11 @@ module.exports = function(grunt) {
       client: {
         src: ['src/index.js'],
         dest: 'dist/electron-cookies.js',
+      },
+      options: {
+        alias: {
+          'net': './node_modules/net-browserify/browser.js'
+        }
       }
     }
   });
