@@ -1,5 +1,5 @@
 {
-  "name": "electron-cookies",
+  "name": "electron-cookies-alt",
   "version": "2.0.0",
   "description": "Adds support for cookies in Electron.",
   "main": "src/index.js",
